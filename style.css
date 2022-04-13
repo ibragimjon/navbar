@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./photo_2022-04-07_16-26-53.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.site-header {
+    border-bottom: 5px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.site-header-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.site-logo {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+.sitenav-list {
+    display: flex;
+    list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.sitenav-link {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.sitenav-link:hover{
+    color: black;
+}
+
+.sitenav-link:active{
+    opacity: 0.6;
+    color: white;
+}
+
+.toggle-nav{
+    background: transparent;
+    color: #fff;
+    border: 0;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: none;
+}
+
+/* hidden */
+
+
+.hidden-nav.site-nav{
+    display: block !important;
+    background: #ffffff8e;
+    position: fixed;
+    width: 70%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+
+.hidden-nav .sitenav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    gap: 25px;
+}
+
+.hidden-nav .sitenav-link {
+    color: #222;
+    font-weight: bold;
+}
+
+.hidden-nav.shownav.site-nav{
+    transform: translate(0%);
+}
+
+.toggle-nav:hover{
+    color:rgb(124, 120, 120);
+    transition: 1s;
+}
+
+@media (max-width:500px){
+    .site-nav{
+        display: none;
+    }
+
+    .toggle-nav{
+        display: block;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <button class="toggle-nav">
+        <i class="fas fa-bars"></i>
+    </button>
+    <header class="site-header">
+        <div class="container site-header-container">
+            <a href="" class="site-logo">Logo</a>
+
+
+            <!-- NAVBAR -->
+            <nav class="site-nav">
+                <ul class="sitenav-list">
+                    <li class="sitenav-item">
+                        <a href="" class="sitenav-link">Home</a>  <!--Home-->
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="" class="sitenav-link">About</a>    <!--About-->
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="" class="sitenav-link">Connect</a>  <!--Connect-->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="hidden-nav site-nav ">
+            <ul class="sitenav-list">
+                <li class="sitenav-item">
+                    <a href="" class="sitenav-link">Home</a>  <!--Home-->
+                </li>
+                <li class="sitenav-item">
+                    <a href="" class="sitenav-link">About</a>    <!--About-->
+                </li>
+                <li class="sitenav-item">
+                    <a href="" class="sitenav-link">Connect</a>  <!--Connect-->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="overlay hiddenss"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
